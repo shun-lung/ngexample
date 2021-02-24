@@ -1,0 +1,43 @@
+<div>
+    <!-- novalidate 提交表單不驗證-->
+    <!-- 大小寫錯字時，刪除後重新打，有時會有找不出問題的情況-->
+<form #login="ngForm" (ngSubmit)="submit(login)" novalidate >
+ <label>name </label>
+ <!-- 第一個 name : 為變數 name為 ngModel-->
+ <!-- 第二個 name : 為form 表單才會提交元素與伺服器互動，若設為 id ->css , 則會讀取不到資訊-->
+ <input #name="ngModel" required minlength="2" mixlength="7" type="text" name="name" ngModel >
+ <!-- 不符合 最小2～7條件，出現紅色警告-->
+ <div *ngIf="name.invalid && name.touched" class="alter alter-danger"> 
+     <!-- 依照不同的條件判斷錯誤 -->
+     <p *ngIf="name.errors.required"> Name required</p>
+     <p *ngIf="name.errors.minlength"> Too short </p>
+ </div>
+
+ 
+ <br>
+ <label>password</label>
+ <!-- 第一個 password : 為變數 password 為 ngModel, 在 *ngIF 可以直在html 進行判斷-->
+ <input #password="ngModel" required minlength="2" mixlength="7" type="password" name="password" ngModel>
+ <br>
+
+ <div *ngIf="password.errors">
+    <!-- <span *ngIf="password.errors.required" >請輸入密碼</span> -->
+    <!-- span 會將標籤視為一行-->
+    <span *ngIf="password.errors.minlength"> 最少2個字元</span>
+    <span *ngIf="password.errors.mixlength">最多7個字元</span>
+
+</div>
+
+
+ <button type="submit"> Submit</button>
+
+
+ <pre>
+    {{ login.value | json}}
+</pre>
+
+</form>
+
+
+
+</div>

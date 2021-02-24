@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+<!-- 原頭資料，全都包在一起-->
+<h1> This is emp </h1>
+<div *ngFor="let item of empinfo1">
+<!-- 取用資料時也是全都一起取用-->
+{{ item }}
+</div>
+<button type="button" (click)="getempinfo1()"> emp 1</button>
+
+
+<!-- 原始資料來源 有做區格  為陣列-->
+<h1> This is emp2 </h1>
+<div *ngFor="let item of empinfo2">
+<!-- 取用資料時改為定義的屬性取用 -->
+    {{ item.name}} ----{{ item.empid}}
+</div>
+<button type="button" (click)="getempinfo2()"> emp 2</button>
+
+
+
+<h1> This is emp3 </h1>
+<div *ngFor="let item of empinfo3">
+{{ item }}
+</div>
+
+<button type="button" (click)="getempinfo3()" disabled> emp 3</button>
