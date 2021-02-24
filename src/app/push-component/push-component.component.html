@@ -1,0 +1,22 @@
+<!-- 1. 先將html 要的介面先做設定 -->
+<!-- 2. 再到ts 把 import ，function , 要推回的function建立-->
+<!-- 3. 再到 dataservice 把值回寫-->
+
+<!-- ngSubmit 帶入 function 如出現錯誤，應為 submit function 尚未在 ts 建立  -->
+<form #f="ngForm" (ngSubmit)="submit(f)">
+    <input type="text" name="location" ngModel>
+    <button type="submit" name="submit"> update loacal</button>
+</form>
+
+
+<button type="button" name="emp1" (click)="getEmpInfo1()"> get emp 1 info</button>
+<div *ngFor ="let item of empInfo1">
+    <ul>
+        <il>
+            {{ item }}
+        </il>
+    </ul>
+</div>
+
+
+
