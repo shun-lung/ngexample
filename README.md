@@ -14,3 +14,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ！[blog圖像]
 (https://drive.google.com/file/d/1uQidzdYbomONwQrKtRyS7qryX4T-a69C/view?usp=sharing)
+！[Yaktocat的圖像]（https://octodex.github.com/images/yaktocat.png）
