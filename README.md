@@ -12,5 +12,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-![GitHub NgDemo](/ngexample/src/assets/png/ngexample-index.png)
+![GitHub NgDemo]
+(https://github.com/shun-lung/ngexample/tree/main/src/assets/png/ngexample-index.png)
 
