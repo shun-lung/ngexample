@@ -1,3 +1,4 @@
+<img width="1435" alt="ngexample-index" src="https://user-images.githubusercontent.com/46545987/110290548-daec5a00-8025-11eb-8163-2a79fcd21830.png">
 # Demo example
 
 1.學習Bootstrap 切版
@@ -14,4 +15,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ![GitHub NgDemo]
 (https://github.com/shun-lung/ngexample/tree/main/src/assets/png/ngexample-index.png)
+
+<img width="1435" alt="ngexample-index" src="https://user-images.githubusercontent.com/46545987/110290575-e2abfe80-8025-11eb-8df0-865366da7c5d.png">
+
 
